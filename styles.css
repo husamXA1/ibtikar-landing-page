@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+    --midnight-blue: #001F3F;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Amiri';
+}
+img {
+    max-width: 100%;
+}
+section:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+/* Header */
+header {
+    background-color: var(--midnight-blue);
+    color: white;
+}
+header a {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Hero */
+/* About */
+/* Features */
+/* Testimonials */
+/* Contact */
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+}
