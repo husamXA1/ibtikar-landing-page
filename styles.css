@@ -42,6 +42,27 @@ h6 {
     border-color: var(--blue);
     color: var(--blue);
 }
+
+h2 {
+    font-size: 2.5rem;
+}
+p {
+    font-size: 1.15rem;
+}
+a {
+    font-size: 1.15rem;
+}
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    a.btn {
+        font-size: 1.25rem;
+    }
+}
 /* Header */
 header {
     background-color: var(--midnight-blue);
@@ -108,27 +129,21 @@ header a:hover {
     min-width: 180px;
 }
 /* About */
-.about h2 {
-    font-size: 2.5rem;
-}
-.about p {
-    font-size: 1.15rem;
-}
-.about a {
-    font-size: 1.15rem;
-}
-@media (min-width: 1200px) {
-    .about h2 {
-        font-size: 3rem;
-    }
-    .about p {
-        font-size: 1.25rem;
-    }
-    .about a {
-        font-size: 1.25rem;
-    }
-}
 /* Features */
+.feature-card {
+    width: 300px;
+}
+.feature-card .illustration {
+    margin-bottom: 1em;
+}
+@media (min-width: 768px) {   
+    .feature-card .illustration {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /* Testimonials */
 /* Contact */
 /* Footer */
