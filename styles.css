@@ -1,23 +1,46 @@
 html {
     box-sizing: border-box;
-    --midnight-blue: #001F3F;
+    --midnight-blue: #001f3f;
+    --blue: #191970;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Amiri';
+    font-family: "Amiri";
 }
 img {
     max-width: 100%;
 }
 section:nth-child(odd) {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 a {
     text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: var(--midnight-blue);
+}
+.text {
+    color: rgba(0, 0, 0, 0.75);
+}
+.btn-primary {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.btn-outline-primary {
+    border-color: var(--blue);
+    color: var(--blue);
 }
 /* Header */
 header {
@@ -52,7 +75,7 @@ header a:hover {
         width: 100%;
         text-align: center;
         transform: translateY(100%);
-        background-color: #001F3F;
+        background-color: #001f3f;
         padding: 1em;
     }
     header ul li {
@@ -61,6 +84,29 @@ header a:hover {
     }
 }
 /* Hero */
+.hero h1 {
+    font-size: 4rem;
+}
+.hero p {
+    font-size: 1.25rem;
+}
+.hero a {
+    font-size: 1.25rem;
+}
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+    .hero p {
+        font-size: 1.5rem;
+    }
+    .hero a {
+        font-size: 1.5rem;
+    }
+}
+.hero a {
+    min-width: 180px;
+}
 /* About */
 /* Features */
 /* Testimonials */
