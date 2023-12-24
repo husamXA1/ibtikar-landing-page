@@ -42,7 +42,6 @@ h6 {
     border-color: var(--blue);
     color: var(--blue);
 }
-
 h2 {
     font-size: 2.5rem;
 }
@@ -62,6 +61,12 @@ a {
     a.btn {
         font-size: 1.25rem;
     }
+}
+textarea {
+    resize: none;
+}
+input, textarea {
+    background-color: #eee;
 }
 /* Header */
 header {
