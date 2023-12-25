@@ -59,7 +59,7 @@
                 <p class="text my-3">
                     مرحبًا في إبتكار، حيث نجمع بين الإبداع والتكنولوجيا لتحويل التحديات إلى حلول. فريقنا مكون من رواد الأعمال والمطورين ملتزم بتطوير تطبيقات رائدة وتجارب مستخدم مذهلة. إبتكار، ليست مجرد شركة، بل حركة تقودنا إلى مستقبل بلا حدود. انضموا إلينا في هذه الرحلة الملهمة لإعادة تعريف عالم التكنولوجيا.
                 </p>
-                <a href="#contact" class="btn btn-primary w-50">تواصل معنا</a>
+                <a href="#contact" class="btn btn-primary w-50 py-2">تواصل معنا</a>
             </div>
         </div>
     </section>
@@ -127,13 +127,13 @@
         <h2 class="text-center">تواصل معنا</h2>
         <div class="my-5 container d-md-flex justify-content-between gap-5 align-items-center">
             <div class="form w-100 my-5">
-                <form class="d-flex flex-column align-items-start" action="#">
+                <form class="d-flex flex-column align-items-start">
                     <label class="w-50 fs-4 my-2" for="email">البريد الإلكتروني</label>
-                    <input class="w-50 rounded border-0 p-2" type="email" name="email" id="email">
+                    <input class="w-50 rounded border-0 p-2" type="email" name="email" id="email" required>
                     <label class="w-50 fs-4 my-2" for="fullname">الإسم الكامل</label>
-                    <input class="w-50 rounded border-0 p-2" type="text" name="fullname" id="fullname">
+                    <input class="w-50 rounded border-0 p-2" type="text" name="fullname" id="fullname" required>
                     <label class="w-50 fs-4 my-2" for="message">الرسالة</label>
-                    <textarea class="w-100 rounded border-0 p-2" name="message" id="message" rows="10"></textarea>
+                    <textarea class="w-100 rounded border-0 p-2" name="message" id="message" rows="10" required></textarea>
                     <button class="btn btn-outline-primary my-2 fs-4">إرسال</button>
                 </form>
             </div>
@@ -142,31 +142,32 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="logo">
+    <footer class="pt-5 pb-2">
+        <div class="container my-5 d-md-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center justify-content-center mb-5">
                 <img src="./assets/Logo.svg" alt="logo">
             </div>
-            <nav>
-                <ul>
+            <nav class="text-center my-3">
+                <h3 class="text-white">إبتكار</h3>
+                <ul class="p-0 my-3">
                     <li><a href="#about">عنا</a></li>
                     <li><a href="#features">مميزاتنا</a></li>
                     <li><a href="#testimonials">التوصيات</a></li>
                     <li><a href="#contact">تواصل</a></li>
                 </ul>
             </nav>
-            <div class="contact-info">
-                <div>
-                    <i>icon</i>
-                    <p>ibtikar@mail.com</p>
+            <div dir="ltr" class="contact-info">
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                    <i class="fa-solid fa-envelope fs-4"></i>
+                    <p class="m-0">ibtikar@mail.com</p>
                 </div>
-                <div>
-                    <i>icon</i>
-                    <p>+249 12 345 6789</p>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                    <i class="fa-solid fa-phone fs-4"></i>
+                    <p class="m-0">+249 12 345 6789</p>
                 </div>
             </div>
         </div>
-        <p class="copyright">جميع الحقوق محفوظة 2023 &copy; إبتكار</p>
+        <p class="copyright m-0 text-center fs-6 opacity-50">جميع الحقوق محفوظة 2023 &copy; إبتكار</p>
     </footer>
     <script src="./libs/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./libs/fontawesome/js/all.min.js"></script>

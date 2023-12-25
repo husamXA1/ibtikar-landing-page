@@ -51,6 +51,9 @@ p {
 a {
     font-size: 1.15rem;
 }
+ul {
+    list-style-type: none;
+}
 @media (min-width: 1200px) {
     h2 {
         font-size: 3rem;
@@ -77,15 +80,14 @@ header .logo {
     width: 100px;
     height: 100px;
 }
-header ul {
-    list-style-type: none;
-}
-header a {
+header a,
+footer a {
     color: white;
     opacity: 0.5;
     transition: opacity 0.3s;
 }
-header a:hover {
+header a:hover,
+footer a:hover {
     opacity: 1;
     text-decoration: underline;
 }
